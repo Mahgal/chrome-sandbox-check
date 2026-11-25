@@ -1,0 +1,11 @@
+chrome-sandbox-check -- demo (fixture data, not this machine)
+CVE-2026-134401 — fixed in Chrome 158.0.8127.88 (Stable, 2026-11-23)
+
+Browser    Version          Verdict
+---------  ---------------  -----------
+Chrome     157.0.8103.78   VULNERABLE
+Edge       158.0.8127.88   PATCHED
+Brave      157.0.8127.57   VULNERABLE
+Chromium   158.0.8127.88   PATCHED
+
+Summary: 2 patched, 2 vulnerable — update to 158.0.8127.88 or later.
