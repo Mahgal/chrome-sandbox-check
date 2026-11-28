@@ -2,9 +2,11 @@
 
 ![chrome-sandbox-check demo](demo.png)
 
-**One command tells you in ~50 ms whether every Chromium browser on your machine is patched against the CVSS 9.6 sandbox escape CVE-2026-134401 — before you open a single tab.**
+**One command tells you in 0.054 s (median of 7 `--demo` runs, measured 2026-11-28) whether every Chromium browser on your machine is patched against the CVSS 9.6 sandbox escape CVE-2026-134401 — before you open a single tab.**
 
 CVE-2026-134401 is an improper input validation flaw in Chrome's Variations component: a crafted HTML page could let a remote attacker execute arbitrary code *outside* the browser sandbox. Google fixed it in the Stable channel update of 2026-11-23 — desktop Chrome **158.0.8127.88** (Windows and Mac also shipped 158.0.8127.89). If your Chrome, Edge, Brave, or Chromium is below that build, you are one bad link away from a sandbox escape.
+
+Status 2026-11-28: the fixed build has been out for five days, but any browser that has not restarted since the update is still running the vulnerable build — the version this tool reads is the one actually on disk, so run it after restarting to confirm the patch took.
 
 ## Who this is for
 
